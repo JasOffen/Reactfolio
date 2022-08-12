@@ -5,6 +5,7 @@ import Header from './components/header'
 import Jumbo from './components/Jumbo'
 import Projects from './components/Projects';
 
+import HeaderMobile from './componentsMobile/Header';
 
 import { useEffect, useState } from 'react';
 
@@ -27,6 +28,7 @@ export default function App() {
   if (windowSize.innerWidth <= 550) {
     return(
       <div>
+        <HeaderMobile/>
         <Jumbo />
         <Projects />
         <h2>Width: {windowSize.innerWidth}</h2>
