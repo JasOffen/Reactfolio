@@ -5,7 +5,7 @@ function HeaderMobile() {
         <div uk-sticky="position: bottom">
             <nav class="uk-navbar uk-navbar-container uk-margin" uk-navbar=''>
             <div class="uk-navbar-left ">
-                <h1 class="uk-margin-top">Jason Offenbaker</h1>
+                <h1 class="uk-margin-top uk-margin-left">Jason Offenbaker</h1>
             </div>
                 <div class="uk-navbar-right">
                     <a class="uk-navbar-toggle uk-navbar-toggle-animate" uk-navbar-toggle-icon="" href="#"></a>
