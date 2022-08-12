@@ -44,7 +44,7 @@ function Projects() {
                                     <p>{data.description}</p>
                                 </div>
                                 <div className="uk-card-footer">
-                                    <a href="#" class="uk-button uk-button-text">Read more</a>
+                                    <a href={data.url} class="uk-button uk-button-text">Go to Project</a>
                                 </div>
                             </div>
                         )

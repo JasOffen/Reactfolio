@@ -1,31 +1,30 @@
 import React from 'react';
 
-function Header(){
-    return(
+function Header() {
+    return (
         // Begin Navbar Section
         <section id='Navbar'>
-            <ul>
+            <nav class="uk-navbar-container uk-margin" uk-navbar="">
+    <div class="uk-navbar-center">
+
+        <div class="uk-navbar-center-left">
+            <ul class="uk-navbar-nav">
+                <li><a href="#">Resume</a></li>
                 <li>
-                    {/* Link to Resume Page and/or just the document itself to download(fs.download?) */}
-                    Resume
-                </li>
-                <li>
-                    {/* Can have github stuff in here, but preferably non coding stuff in here too? Blender, Arcade stuff, Unreal*/}
-                    Projects
-                </li>
-                <li>
-                    {/* Animated after loadin */}
-                    Jason Offenbaker
-                </li>
-                <li>
-                    {/* Direct _Target link to GitHub */}
-                    GitHub
-                </li>
-                <li>
-                    {/* Links to Twitter, Linkdin, etc page*/}
-                    Socials
+                    <a href="#">Projects</a>
                 </li>
             </ul>
+        </div>
+        <a class="uk-navbar-item uk-logo" href="#">Jason Offenbaker</a>
+        <div class="uk-navbar-center-right">
+            <ul class="uk-navbar-nav">
+                <li><a href="#">GitHub</a></li>
+                <li><a href="#">Socials</a></li>
+            </ul>
+        </div>
+
+    </div>
+</nav>
         </section>
     )
 }

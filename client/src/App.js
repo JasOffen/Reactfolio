@@ -5,14 +5,49 @@ import Header from './components/header'
 import Jumbo from './components/Jumbo'
 import Projects from './components/Projects';
 
-function App() {
-  return (
-    <div>
-      <Header />
-      <Jumbo />
-      <Projects />
-    </div>
-  );
+
+import { useEffect, useState } from 'react';
+
+export default function App() {
+  const [windowSize, setWindowSize] = useState(getWindowSize());
+
+  useEffect(() => {
+    function handleWindowResize() {
+      setWindowSize(getWindowSize());
+    }
+
+    window.addEventListener('resize', handleWindowResize);
+
+    return () => {
+      window.removeEventListener('resize', handleWindowResize);
+    };
+  }, []);
+
+  // Check for Mobile Size on the innerWidth
+  if (windowSize.innerWidth <= 550) {
+    return(
+      <div>
+        <Jumbo />
+        <Projects />
+        <h2>Width: {windowSize.innerWidth}</h2>
+        <h2>Height: {windowSize.innerHeight}</h2>
+      </div>
+      )
+  } else {
+
+    return (
+      <div>
+        <Header />
+        <Jumbo />
+        <Projects />
+        <h2>Width: {windowSize.innerWidth}</h2>
+        <h2>Height: {windowSize.innerHeight}</h2>
+      </div>
+    );
+  }
 }
 
-export default App;
+function getWindowSize() {
+  const { innerWidth, innerHeight } = window;
+  return { innerWidth, innerHeight };
+}
