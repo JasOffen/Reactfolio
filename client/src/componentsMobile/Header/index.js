@@ -3,7 +3,7 @@ import React from "react";
 function HeaderMobile() {
     return (
         <div uk-sticky="position: bottom">
-            <nav class="uk-navbar uk-navbar-container uk-margin" uk-navbar=''>
+            <nav class="uk-navbar uk-navbar-container" uk-navbar=''>
             <div class="uk-navbar-left ">
                 <h1 class="uk-margin-top uk-margin-left">Jason Offenbaker</h1>
             </div>
