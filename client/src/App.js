@@ -1,10 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
 
+// Desktop Imports
 import Header from './components/header'
 import Jumbo from './components/Jumbo'
 import Projects from './components/Projects';
+import About from './components/About';
 
+// Mobile Imports
 import HeaderMobile from './componentsMobile/Header';
 
 import { useEffect, useState } from 'react';
@@ -40,6 +43,7 @@ export default function App() {
     return (
       <div>
         <Header />
+        <About />
         <Jumbo />
         <Projects />
         <h2>Width: {windowSize.innerWidth}</h2>
