@@ -3,7 +3,7 @@ import React from 'react';
 function Header() {
     return (
         // Begin Navbar Section
-        <section id='Navbar'>
+        <section>
             <nav class="uk-navbar-container" uk-sticky="" uk-navbar="">
                 <div class="uk-navbar-center" tabindex="0">
                     <div class="uk-navbar-center-left">

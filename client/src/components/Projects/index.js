@@ -4,19 +4,22 @@ import { Link } from "react-router-dom";
 
 function Projects() {
 
-    const gitHubURL = "https://api.github.com/users/JasOffen/repos?sort=updated&direction=des&per_page=5"
+    const gitHubURL = "https://api.github.com/users/JasOffen/repos?sort=updated&direction=des&per_page=15"
     const [repos, setRepos] = useState([])
     const [repoLoading, setLoading] = useState([])
+    const [err, errLoading] = useState([])
     const [userData, setUserData] = useState([])
     const [userLoading, setUserLoading] = useState([])
     // get GitHub Repo data
     const getGitRepos = async () => {
         const response = await fetch(gitHubURL)
         const json = await response.json()
+        const err = await response.err()
         try {
             setRepos(json)
             if (response.ok) {
                 setLoading(response)
+                console.log(response)
             }
         } catch {
             console.log(`idk man there was an error!`)
@@ -24,9 +27,9 @@ function Projects() {
         console.log(json)
     }
 
-    useEffect(() => { getGitRepos() }, [])
+    //useEffect(() => { getGitRepos() }, [])
     // Check if we're still loading data
-    if (!repoLoading) { return (<div uk-spinner="ratio: 3"></div>) } else {
+    if (!repoLoading || err) { return (<div uk-spinner="ratio: 3"></div>) } else {
         return (
             <section id="Project-Cards">
                 <div className="uk-child-width-1-3@m uk-grid-small uk-grid-match" uk-grid="">
