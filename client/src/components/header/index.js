@@ -8,17 +8,17 @@ function Header() {
                 <div class="uk-navbar-center" tabindex="0">
                     <div class="uk-navbar-center-left">
                         <ul class="uk-navbar-nav uk-animation-slide-left">
-                            <li><a href="#">Resume</a></li>
+                            <li><a href="https://theuwucrew-my.sharepoint.com/:w:/g/personal/jason_offenbaker_com/EcCUJWc9Ao1Ppjsais3hzpkBy_fGbuBA57WaXknmzkClkg?e=IdgYCF" target='_blank' rel="noreferrer">Resume</a></li>
                             <li>
-                                <a href="#">Projects</a>
+                                <a href='#Project-Cards' uk-scroll=''>Projects</a>
                             </li>
                         </ul>
                     </div>
-                    <a class="uk-navbar-item uk-logo uk-animation-slide-top" href="#">Jason Offenbaker</a>
+                    <a class="uk-navbar-item uk-logo uk-animation-slide-top" href='#' uk-scroll=''>Jason Offenbaker</a>
                     <div class="uk-navbar-center-right">
                         <ul class="uk-navbar-nav uk-animation-slide-right">
-                                <li><a href="#">GitHub</a></li>
-                            <li><a href="#">Socials</a></li>
+                                <li><a href="https://github.com/jasoffen" target='_blank' rel="noreferrer">GitHub</a></li>
+                            <li><a href="https://twitter.com/jasonoffenbaker">Socials</a></li>
                         </ul>
                     </div>
 
