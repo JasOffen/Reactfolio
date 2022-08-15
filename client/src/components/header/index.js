@@ -4,7 +4,7 @@ function Header() {
     return (
         // Begin Navbar Section
         <section id='Navbar'>
-            <nav class="uk-navbar-container" uk-navbar="">
+            <nav class="uk-navbar-container" uk-sticky="" uk-navbar="">
                 <div class="uk-navbar-center" tabindex="0">
                     <div class="uk-navbar-center-left">
                         <ul class="uk-navbar-nav uk-animation-slide-left">

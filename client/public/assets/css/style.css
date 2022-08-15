@@ -4,3 +4,20 @@
     background-size: cover;
     height: 900px;
 }
+
+#Navbar{
+    background-color: #333333;
+}
+.uk-navbar-container:not(.uk-navbar-transparent){
+    background: rgba(0,0,0,0.7);
+    backdrop-filter: saturate(180%) blur(20px);
+    color: white;
+}
+.uk-logo{
+    color: white;
+}
+
+#About .uk-card{
+    border-radius: 40px;
+    background: rgba(255,255,255,0.7)
+}
