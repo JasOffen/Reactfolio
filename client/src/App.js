@@ -27,13 +27,38 @@ export default function App() {
     };
   }, []);
 
+  const gitHubURL = "https://api.github.com/users/JasOffen/repos?sort=updated&direction=des&per_page=4"
+  const [data, setData] = useState(null);
+  const [error, setError] = useState(null);
+  const [loading, setLoading] = useState(true);
+  useEffect(() =>{
+    fetch(gitHubURL)
+      .then(response =>{
+        if(response.ok){
+          return response.json()
+        }
+        throw response;
+      })
+      .then(data =>{
+        setData(data)
+      })
+      .catch(error =>{
+        console.log('Error fetching data: ', error)
+        setError(error)
+      })
+      .finally(() => {
+        setLoading(false)
+        console.log('Updated')
+      })
+  }, [])
   // Check for Mobile Size on the innerWidth
+
   if (windowSize.innerWidth <= 550) {
     return(
       <div>
         <HeaderMobile/>
-        <Jumbo />
-        <Projects />
+        <About />
+        {/* <Projects githubData/> */}
         <h2>Width: {windowSize.innerWidth}</h2>
         <h2>Height: {windowSize.innerHeight}</h2>
       </div>
@@ -45,7 +70,7 @@ export default function App() {
         <Header />
         <About />
         <Jumbo />
-        <Projects />
+        <Projects gitData={data} gitLoading={loading} gitError={error}/>
         <h2>Width: {windowSize.innerWidth}</h2>
         <h2>Height: {windowSize.innerHeight}</h2>
       </div>
