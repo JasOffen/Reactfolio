@@ -2,11 +2,11 @@ import React from "react";
 
 function About() {
     return (
-        <section id='About' className='uk-flex uk-flex-center'>
-            <div className='uk-margin-large-top'>
+        <section id='About' className='uk-flex uk-flex-center' uk-parallax="bgy: -300">
+            <div className='uk-margin-large-top uk-margin-large-bottom'>
                 <div className='uk-card uk-card-default uk-card-body'>
                     <div class="uk-flex uk-flex-center uk-text-center">
-                        <div className="uk-margin uk-margin-large-top ">
+                        <div className="uk-margin uk-margin-large-top">
                             <h2>👋Hello👋</h2>
                             <p>My name is Jason Offenbaker. Im a Full Stack Developer with a passion for all things involving technology</p>
                             <p>Currently I'm getting into Machine Learning with Python and MatLabs, but heres some other things I've been learning aswell!</p>
