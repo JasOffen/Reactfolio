@@ -2,7 +2,7 @@
     background-image: url("../images/about-background.png");
     background-color: #000;
     background-size: cover;
-    height: 900px;
+    height: 100%;
 }
 
 #Navbar{
@@ -28,4 +28,10 @@
 
 #MobileLogo{
     height: 75px;
+}
+
+#Project-Cards{
+    background-image: url("../images/project-background2.png");
+    background-color: #000;
+    background-size: cover;
 }

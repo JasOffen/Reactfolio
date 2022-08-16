@@ -6,6 +6,7 @@ import Header from './components/header'
 import Jumbo from './components/Jumbo'
 import Projects from './components/Projects';
 import About from './components/About';
+import Footer from './components/Footer';
 
 // Mobile Imports
 import HeaderMobile from './componentsMobile/Header';
@@ -27,7 +28,7 @@ export default function App() {
     };
   }, []);
 
-  const gitHubURL = "https://api.github.com/users/JasOffen/repos?sort=updated&direction=des&per_page=4"
+  const gitHubURL = "https://api.github.com/users/JasOffen/repos?sort=updated&direction=des&per_page=15"
   const [data, setData] = useState(null);
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -71,8 +72,7 @@ export default function App() {
         <About />
         <Jumbo />
         <Projects gitData={data} gitLoading={loading} gitError={error}/>
-        <h2>Width: {windowSize.innerWidth}</h2>
-        <h2>Height: {windowSize.innerHeight}</h2>
+        <Footer/>
       </div>
     );
   }

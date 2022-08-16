@@ -8,7 +8,7 @@ function Header() {
                 <div class="uk-navbar-center" tabindex="0">
                     <div class="uk-navbar-center-left">
                         <ul class="uk-navbar-nav uk-animation-slide-left">
-                            <li><a href="https://theuwucrew-my.sharepoint.com/:w:/g/personal/jason_offenbaker_com/EcCUJWc9Ao1Ppjsais3hzpkBy_fGbuBA57WaXknmzkClkg?e=IdgYCF" target='_blank' rel="noreferrer">Resume</a></li>
+                            <li><a href="https://offenbaker-my.sharepoint.com/:w:/g/personal/jason_offenbaker_com/EcCUJWc9Ao1Ppjsais3hzpkBy_fGbuBA57WaXknmzkClkg?e=IdgYCF" target='_blank' rel="noreferrer">Resume</a></li>
                             <li>
                                 <a href='#Project-Cards' uk-scroll=''>Projects</a>
                             </li>

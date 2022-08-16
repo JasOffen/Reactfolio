@@ -22,7 +22,7 @@ function Projects({ gitData, gitLoading, gitError }) {
     if (gitData) {
 
         return (
-            <section id="Project-Cards" className="">
+            <section id="Project-Cards" className="uk-flex uk-flex-center" uk-parallax="bgy: -200" >
                 <div className="uk-child-width-1-3@m uk-grid-small uk-grid-match" uk-grid="">
                     {gitData.map((data) => {
                         if(data.description < 1){
