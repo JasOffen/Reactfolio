@@ -34,6 +34,7 @@ function Projects({ gitData, gitLoading, gitError }) {
                                     {/* <div class="uk-card-badge uk-label">Badge</div> */}
                                     <h3 class="uk-card-title">{data.name}</h3>
                                     <p>{data.description}</p>
+                                    {/* gets the html url for the github project */}
                                     <a href={data.html_url} class="uk-button uk-button-text">Read more</a>
                                 </div>
                             </div>
