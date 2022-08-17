@@ -1,0 +1,37 @@
+#About{
+    background-image: url("../images/about-background.png");
+    background-color: #000;
+    background-size: cover;
+    height: 100%;
+}
+
+#Navbar{
+    background-color: #333333;
+}
+.uk-navbar-container:not(.uk-navbar-transparent){
+    background: rgba(0,0,0,0.7);
+    backdrop-filter: saturate(180%) blur(20px);
+    color: white;
+}
+.uk-logo{
+    color: white;
+}
+
+#About .uk-card{
+    border-radius: 40px;
+    background: rgba(255,255,255,0.7)
+}
+
+#Jumbo img{
+    height: 500px;
+}
+
+#MobileLogo{
+    height: 75px;
+}
+
+#Project-Cards{
+    background-image: url("../images/project-background2.png");
+    background-color: #000;
+    background-size: cover;
+}
