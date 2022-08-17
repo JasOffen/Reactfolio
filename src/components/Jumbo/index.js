@@ -13,7 +13,7 @@ function Jumbo(){
                     <span class="uk-badge">Group</span>
                 </div>
                 {/* Image, and link to project live site */}
-                <a href='https://blitman12.github.io/Citizen-Master/' alt='Image of variable name' target="_blank" rel="noreferrer"><img src='./assets/images/citizen-master.jpg'></img></a>
+                <a href='https://blitman12.github.io/Citizen-Master/' alt='Image of variable name' target="_blank" rel="noreferrer"><img src='./assets/images/citizenmaster.jpg'></img></a>
                 {/* Description. Pull from GitHub API or write here manually? */}
             </div>
         </section>
