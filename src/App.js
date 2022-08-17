@@ -49,7 +49,6 @@ export default function App() {
       })
       .finally(() => {
         setLoading(false)
-        console.log('Updated')
       })
   }, [])
   // Check for Mobile Size on the innerWidth
